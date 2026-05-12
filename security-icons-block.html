@@ -29,7 +29,7 @@
 
     .security-icons-block__item {
       width: 100%;
-      min-height: 134px;
+      min-height: 154px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -55,15 +55,24 @@
       box-shadow: 0 0 0 3px rgba(50, 119, 253, 0.18);
     }
 
+    .security-icons-block__icon-container {
+      width: 72px;
+      height: 72px;
+      flex: 0 0 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: currentColor;
+    }
+
     .security-icons-block__icon {
-      width: 58px;
-      height: 58px;
-      flex: 0 0 58px;
+      width: 60px;
+      height: 60px;
       display: block;
       color: currentColor;
       stroke: currentColor;
       fill: none;
-      stroke-width: 1.8;
+      stroke-width: 2.25;
       stroke-linecap: round;
       stroke-linejoin: round;
       transition: stroke 0.22s ease;
@@ -101,14 +110,19 @@
       }
 
       .security-icons-block__item {
-        min-height: 126px;
+        min-height: 146px;
         gap: 16px;
       }
 
+      .security-icons-block__icon-container {
+        width: 68px;
+        height: 68px;
+        flex-basis: 68px;
+      }
+
       .security-icons-block__icon {
-        width: 54px;
-        height: 54px;
-        flex-basis: 54px;
+        width: 56px;
+        height: 56px;
       }
 
       .security-icons-block__label {
@@ -136,55 +150,65 @@
 
   <div class="security-icons-block__grid">
     <a class="security-icons-block__item" href="https://www.bitrix24.ru/security/#nadejnost" target="_blank" rel="noopener">
-      <svg class="security-icons-block__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <rect x="14" y="10" width="36" height="14" rx="4"></rect>
-        <rect x="14" y="40" width="36" height="14" rx="4"></rect>
-        <path d="M22 24v16"></path>
-        <path d="M42 24v16"></path>
-        <path d="M22 17h.01"></path>
-        <path d="M30 17h.01"></path>
-        <path d="M22 47h.01"></path>
-        <path d="M30 47h.01"></path>
-      </svg>
+      <span class="security-icons-block__icon-container" aria-hidden="true">
+        <svg class="security-icons-block__icon" viewBox="0 0 72 72" focusable="false">
+          <rect x="14" y="12" width="44" height="16" rx="4.5"></rect>
+          <rect x="14" y="44" width="44" height="16" rx="4.5"></rect>
+          <path d="M24 28v16"></path>
+          <path d="M48 28v16"></path>
+          <path d="M24 20h.01"></path>
+          <path d="M34 20h.01"></path>
+          <path d="M24 52h.01"></path>
+          <path d="M34 52h.01"></path>
+        </svg>
+      </span>
       <span class="security-icons-block__label">Надёжность инфраструктуры</span>
     </a>
 
     <a class="security-icons-block__item" href="https://www.bitrix24.ru/security/#zaschita" target="_blank" rel="noopener">
-      <svg class="security-icons-block__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M32 7l21 8v15c0 13.5-8.6 23.2-21 28-12.4-4.8-21-14.5-21-28V15l21-8z"></path>
-        <path d="M23 32l6 6 13-14"></path>
-      </svg>
+      <span class="security-icons-block__icon-container" aria-hidden="true">
+        <svg class="security-icons-block__icon" viewBox="0 0 72 72" focusable="false">
+          <path d="M36 8l24 9v17c0 15.5-9.8 26.4-24 32-14.2-5.6-24-16.5-24-32V17l24-9z"></path>
+          <path d="M26 36l7 7 15-17"></path>
+        </svg>
+      </span>
       <span class="security-icons-block__label">Защита<br>данных</span>
     </a>
 
     <a class="security-icons-block__item" href="https://www.bitrix24.ru/security/#razrabotka" target="_blank" rel="noopener">
-      <svg class="security-icons-block__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M20 28l-8 7 8 7"></path>
-        <path d="M44 28l8 7-8 7"></path>
-        <path d="M37 18l-10 28"></path>
-        <rect x="22" y="34" width="20" height="16" rx="4"></rect>
-        <path d="M27 34v-5a5 5 0 0 1 10 0v5"></path>
-      </svg>
+      <span class="security-icons-block__icon-container" aria-hidden="true">
+        <svg class="security-icons-block__icon" viewBox="0 0 72 72" focusable="false">
+          <path d="M24 25l-13 11 13 11"></path>
+          <path d="M48 25l13 11-13 11"></path>
+          <path d="M42 17L30 55"></path>
+          <rect x="23" y="36" width="26" height="20" rx="5"></rect>
+          <path d="M29 36v-7a7 7 0 0 1 14 0v7"></path>
+        </svg>
+      </span>
       <span class="security-icons-block__label">Безопасная разработка</span>
     </a>
 
     <a class="security-icons-block__item" href="https://www.bitrix24.ru/security/#zakon" target="_blank" rel="noopener">
-      <svg class="security-icons-block__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M20 8h18l10 10v38H20z"></path>
-        <path d="M38 8v11h10"></path>
-        <path d="M27 38l5 5 10-12"></path>
-        <path d="M27 24h8"></path>
-      </svg>
+      <span class="security-icons-block__icon-container" aria-hidden="true">
+        <svg class="security-icons-block__icon" viewBox="0 0 72 72" focusable="false">
+          <path d="M20 8h22l12 12v44H20z"></path>
+          <path d="M42 8v13h12"></path>
+          <path d="M28 42l7 7 13-16"></path>
+          <path d="M28 27h10"></path>
+        </svg>
+      </span>
       <span class="security-icons-block__label">Соответствие законодательству</span>
     </a>
 
     <a class="security-icons-block__item" href="https://www.bitrix24.ru/security/#monitoring" target="_blank" rel="noopener">
-      <svg class="security-icons-block__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <path d="M7 32s9-16 25-16 25 16 25 16-9 16-25 16S7 32 7 32z"></path>
-        <circle cx="32" cy="32" r="8"></circle>
-        <path d="M46 49l6 6"></path>
-        <path d="M18 49l-6 6"></path>
-      </svg>
+      <span class="security-icons-block__icon-container" aria-hidden="true">
+        <svg class="security-icons-block__icon" viewBox="0 0 72 72" focusable="false">
+          <path d="M7 36s10.5-18 29-18 29 18 29 18-10.5 18-29 18S7 36 7 36z"></path>
+          <circle cx="36" cy="36" r="9"></circle>
+          <path d="M52 56l7 7"></path>
+          <path d="M20 56l-7 7"></path>
+        </svg>
+      </span>
       <span class="security-icons-block__label">Центр<br>мониторинга</span>
     </a>
   </div>
